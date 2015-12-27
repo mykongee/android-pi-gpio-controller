@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Raspberry Light</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Main Activity -->
+    <string name="button_blink">Blink an LED</string>
+    <string name="to_date_time">Alarm Light</string>
+    <string name="title_activity_date_time">DateTimeActivity</string>
+
+    <!--DateTime Activity-->
+    <string name="date_picker">Set Date</string>
+    <string name="time_picker">Set Time</string>
+    <string name="alarm">Set Alarm</string>
+
+</resources>
