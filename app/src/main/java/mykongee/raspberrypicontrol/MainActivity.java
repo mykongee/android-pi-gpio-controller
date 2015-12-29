@@ -53,7 +53,7 @@ public class MainActivity extends Activity {
         @Override
         protected Void doInBackground(Void... params){
             try {
-                final String BASE_URL = "http://192.168.1.21:3000/light";
+                final String BASE_URL = Constants.BASE_URL;
                 Uri builtUri = Uri.parse(BASE_URL).buildUpon().build();
 
                 URL url = new URL(builtUri.toString());
