@@ -110,7 +110,7 @@ public class DateTimeActivity extends AppCompatActivity implements
         @Override
         protected Void doInBackground(String... params){
             try {
-                final String BASE_URL = "http://192.168.1.21:3000/alarmlight";
+                final String BASE_URL = Constants.ALARM_BASE_URL;
                 Uri builtUri = Uri.parse(BASE_URL).buildUpon().
                         appendQueryParameter("time", params[0]).
                         build();
