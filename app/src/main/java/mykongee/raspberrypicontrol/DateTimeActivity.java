@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.provider.AlarmClock;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -59,7 +60,7 @@ public class DateTimeActivity extends AppCompatActivity implements
                 Log.v(LOG_TAG, queryFormatDate + " " + queryFormatTime);
                 alarmLightTask.execute(queryFormatDate + " " + queryFormatTime);
                 Intent intent = new Intent();
-                //intent.setAction(AlarmClock.ACTION_SET_ALARM);
+                intent.setAction(AlarmClock.ACTION_SET_ALARM);
                 startActivity(intent);
             }
         });
