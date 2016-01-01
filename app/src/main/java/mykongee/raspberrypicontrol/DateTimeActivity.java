@@ -49,10 +49,17 @@ public class DateTimeActivity extends AppCompatActivity implements
         dateFormat = DateFormat.getDateInstance(DateFormat.LONG, Locale.getDefault());
         simpleDateFormat = new SimpleDateFormat(TIME_PATTERN, Locale.getDefault());
 
+        // Initialize these values as current date and time
+        // To prevent error with empty query parameters
+        queryFormatTime = dateFormat.format(calendar.getTime());
+        queryFormatDate = simpleDateFormat.format(calendar.getTime());
+
         dateView = (TextView) findViewById(R.id.lblDate);
         timeView = (TextView) findViewById(R.id.lblTime);
         Button alarmButton = (Button) findViewById(R.id.btnAlarm);
 
+        // Set button click to request the API to turn on the light at a certain date and time
+        // And to set an alarm with the main alarm app.
         alarmButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
