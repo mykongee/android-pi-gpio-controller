@@ -15,6 +15,11 @@
         android:text="@string/button_blink">
     </Button>
 
+    <Button android:id="@+id/stop_button"
+        style="@style/CoolButton"
+        android:text="@string/button_stop">
+    </Button>
+
     <Button
         android:id="@+id/to_alarm_light"
         style="@style/CoolButton"

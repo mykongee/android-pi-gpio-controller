@@ -5,6 +5,7 @@
 
     <!-- Main Activity -->
     <string name="button_blink">Blink an LED</string>
+    <string name="button_stop">Stop Blinking</string>
     <string name="to_date_time">Alarm Light</string>
     <string name="title_activity_date_time">DateTimeActivity</string>
 
